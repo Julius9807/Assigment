@@ -10,6 +10,7 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat
 import com.example.juliusassigment.databinding.ActivityRegisterAcitivityBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.UserProfileChangeRequest
 import com.jakewharton.rxbinding2.widget.RxTextView
 import io.reactivex.Observable
 
@@ -130,9 +131,15 @@ class RegisterAcitivity : AppCompatActivity() {
         binding.etregisterpasswordconfirm.error = if(isNotValid) "Password not match!" else null
     }
 
-    private fun registerUser(email:String , password:String){
+    private fun registerUser(email:String , password:String ){
         auth.createUserWithEmailAndPassword(email, password)
-            .addOnCompleteListener(this){
+        val user = auth.currentUser
+        val name = binding.etregistername.text.toString().trim()
+        val profileUpdates = UserProfileChangeRequest.Builder()
+            .setDisplayName(name)
+            .build()
+        user?.updateProfile(profileUpdates)
+            ?.addOnCompleteListener(this){
                 if (it.isSuccessful){
                     startActivity(Intent(this, LoginActivity::class.java))
                     Toast.makeText(this, "Register Successfully", Toast.LENGTH_SHORT).show()
