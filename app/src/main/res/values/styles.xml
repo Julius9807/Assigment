@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="loginet">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginBottom">388dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:inputType">textPassword</item>
+    </style>
+</resources>

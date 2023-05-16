@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "32841266179",
+    "project_id": "educationapp-a0f56",
+    "storage_bucket": "educationapp-a0f56.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:32841266179:android:012cb98acf8d5f7e2e0a36",
+        "android_client_info": {
+          "package_name": "com.example.juliusassigment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "32841266179-u0nh4fna4q774sc23c3591n4417q3sn2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1EbP-Z8X3KUFq7u5BnMM4WXrmPPqqfwg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "32841266179-u0nh4fna4q774sc23c3591n4417q3sn2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
