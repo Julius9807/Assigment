@@ -1,6 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- course_main_page colors -->
+
+    <color name="colorPrimary">#008577</color>
     <color name="primary_color">#00C9B8</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="bg_main_page_color">#DECAF8</color>
+    <color name="username_color">#000000</color>
+    <color name="oval_color">#161455</color>
+    <color name="course_color">#FFD7E0</color>
+    <color name="_60s_quiz_game_color">#FCE46C</color>
+    <color name="exercise_color">#9CF6CA</color>
+    <color name="bg_course_main_page_color">#FFD7E0</color>
+    <color name="bg_puzzle_main_page_color">#FCE46C</color>
+    <color name="capacity_color">#181D27</color>
+    <color name="course_back_color">#E48499</color>
+    <color name="puzzle_back_color">#FEB754</color>
+
+    <color name="pink_400">#FFEC407A</color>
+    <color name="pink_600">#FFD81B60</color>
+    <color name="pink_950">#FFB31650</color>
+    <color name="purple_400">#FFAB47BC</color>
+
+    <color name="bg_login_page_ek2_color">#FFFFFF</color>
+    <color name="main_background_color">#DECAF7</color>
+    <color name="username_ek1_color">#AAAAAA</color>
+    <color name="username_ek2_color">#777777</color>
+    <color name="haven_t_sign_up_yet__color">#000000</color>
+    <color name="title_color">#DA4E70</color>
+    <color name="rectangle_18800_color">#FAFAFA</color>
+
+    <color name="bg_register_page_ek2_color">#FFFFFF</color>
+    <color name="register_background_color">#DECAF7</color>
+    <color name="already_has_account___color">#000000</color>
+    <color name="yourname_gmail_com_color">#AAAAAA</color>
 </resources>

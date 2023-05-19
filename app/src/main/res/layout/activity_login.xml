@@ -1,79 +1,155 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".LoginActivity"
-    android:padding="20dp">
+    tools:context=".loginRegister.LoginActivity" >
 
-    <TextView
-        android:id="@+id/tvlogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/login_to_app"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.161" />
+    <RelativeLayout
+        android:id="@+id/page_login_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.80000001192093"
+        android:background="@drawable/main_background_shape">
 
-    <TextView
-        android:id="@+id/tvlogintoregister"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:text="@string/register_if_you_dont_have_an_account"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        <ImageView
+            android:id="@+id/homegrown_education_logo_removebg_preview_1"
+            android:layout_width="247dp"
+            android:layout_height="206dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/homegrown_education_logo_removebg_preview_1" />
 
-    <EditText
-        android:id="@+id/etloginemail"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:ems="10"
-        android:hint="@string/your_email_address"
-        android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.441"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.305" />
+        <RelativeLayout
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="630dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="200dp"
+            android:background="@color/white">
 
-    <EditText
-        android:id="@+id/etloginpassword"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:ems="10"
-        android:hint="@string/your_password"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/etloginemail"
-        app:layout_constraintHorizontal_bias="0.479"
-        app:layout_constraintStart_toStartOf="@+id/etloginemail"
-        app:layout_constraintTop_toBottomOf="@+id/etloginemail"
-        app:layout_constraintVertical_bias="0.063" />
+            <TextView
+                android:id="@+id/email_text"
+                android:layout_width="wrap_content"
+                android:layout_height="47dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="90dp"
+                android:text="Enter your email"
+                android:textColor="@color/username_ek2_color"
+                android:textSize="24sp" />
 
-    <TextView
-        android:id="@+id/tvforgotpass"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/forgot_password"
-        app:layout_constraintEnd_toEndOf="@+id/etloginpassword"
-        app:layout_constraintTop_toBottomOf="@+id/etloginpassword" />
+            <RelativeLayout
+                android:id="@+id/email_input_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="110dp">
 
-    <Button
-        android:id="@+id/btnloginpage"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="80dp"
-        android:text="@string/login"
-        style="@style/ButtonGrey"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+                <EditText
+                    android:id="@+id/etloginemail"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:hint="example@mail.com"
+                    android:inputType="textEmailAddress"
+                    android:src="@drawable/card"
+                    android:textColorHint="@color/username_ek1_color" />
+
+                <ImageView
+                    android:id="@+id/vector"
+                    android:layout_width="16.61dp"
+                    android:layout_height="15.2dp"
+                    android:layout_marginStart="250dp"
+                    android:layout_marginTop="18dp"
+                    android:contentDescription="vector"
+                    android:src="@drawable/vector_ek1" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/password_text"
+                android:layout_width="199dp"
+                android:layout_height="47dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="160dp"
+                android:text="Password"
+                android:textColor="@color/username_ek2_color"
+                android:textSize="24sp" />
+
+            <RelativeLayout
+                android:id="@+id/password_input_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="180dp">
+
+                <EditText
+                    android:id="@+id/etloginpassword"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:inputType="textPassword"
+                    android:src="@drawable/card"
+                    android:textColorHint="@color/username_ek1_color" />
+
+                <ImageView
+                    android:id="@+id/key"
+                    android:layout_width="16.61dp"
+                    android:layout_height="15.2dp"
+                    android:layout_marginStart="250dp"
+                    android:layout_marginTop="18dp"
+                    android:contentDescription="vector"
+                    android:src="@drawable/vector_ek3" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvforgotpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="240dp"
+                android:text="@string/forgot_password"
+                android:textSize="18sp" />
+
+
+            <Button
+                android:id="@+id/btnloginpage"
+                style="@style/ButtonGrey"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="370dp"
+                android:background="@drawable/rectangle_2_shape"
+                android:gravity="center"
+                android:text="Sign In"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvlogintoregister"
+                android:layout_width="320dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center_horizontal|center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="430dp"
+                android:gravity="center"
+                android:text="@string/register_if_you_dont_have_an_account"
+                android:textColor="@color/haven_t_sign_up_yet__color"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/login"
+                android:textColor="@color/title_color"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</layout>

@@ -1,98 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".RegisterAcitivity"
-    android:padding="20dp">
+    tools:context=".RegisterActivity"
+    >
 
-    <TextView
-        android:id="@+id/tvregister"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/create_an_account"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.161" />
+    <RelativeLayout
+        android:id="@+id/page_register_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.80000001192093"
+        android:background="@drawable/main_background_shape">
 
-    <TextView
-        android:id="@+id/tvregistertologin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:text="@string/login_if_you_have_an_account"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        <ImageView
+            android:id="@+id/homegrown_education_logo_removebg_preview_1"
+            android:layout_width="247dp"
+            android:layout_height="206dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="homegrown_education_logo_removebg_preview_1"
+            android:src="@drawable/homegrown_education_logo_removebg_preview_1" />
 
-    <EditText
-        android:id="@+id/etregisteremail"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:ems="10"
-        android:hint="@string/your_email_address"
-        android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.414"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etregistername"
-        app:layout_constraintVertical_bias="0.057" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="630dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="200dp"
+            android:background="@color/white">
 
-    <Button
-        android:id="@+id/btnregisterpage"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="80dp"
-        android:text="@string/register"
-        style="@style/ButtonGrey"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:id="@+id/username_text"
+                android:layout_width="199dp"
+                android:layout_height="47dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="70dp"
+                android:text="User Name"
+                android:textColor="@color/username_ek2_color"
+                android:textSize="24sp" />
 
-    <EditText
-        android:id="@+id/etregistername"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:ems="10"
-        android:hint="@string/your_name"
-        android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.414"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.276" />
+            <EditText
+                android:id="@+id/etregistername"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="90dp"
+                android:hint="Eunice Voon"
+                android:inputType="text"
+                android:src="@drawable/card"
+                android:textColorHint="@color/username_ek1_color"
+                android:textSize="14.33sp" />
 
-    <EditText
-        android:id="@+id/etregisterpassword"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="24dp"
-        android:ems="10"
-        android:hint="@string/your_password"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.414"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etregisteremail" />
+            <TextView
+                android:id="@+id/email_text"
+                android:layout_width="199dp"
+                android:layout_height="47dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="140dp"
+                android:text="Email"
+                android:textColor="@color/username_ek2_color"
+                android:textSize="24sp" />
 
-    <EditText
-        android:id="@+id/etregisterpasswordconfirm"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:ems="10"
-        android:hint="@string/confirm_password"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.414"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etregisterpassword"
-        app:layout_constraintVertical_bias="0.079" />
+            <EditText
+                android:id="@+id/etregisteremail"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="160dp"
+                android:src="@drawable/card"
+                android:hint="@string/example_mail_com"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/username_ek1_color"
+                android:textSize="14.33sp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/password_text"
+                android:layout_width="199dp"
+                android:layout_height="47dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="210dp"
+                android:text="Password"
+                android:textColor="@color/username_ek2_color"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/etregisterpassword"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="230dp"
+                android:inputType="textPassword"
+                android:src="@drawable/card"
+                android:textColorHint="@color/username_ek1_color"
+                android:textSize="14.33sp" />
+
+
+            <TextView
+                android:id="@+id/password_comfirm_text"
+                android:layout_width="199dp"
+                android:layout_height="47dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="280dp"
+                android:text="@string/confirm_password"
+                android:textColor="@color/username_ek2_color"
+                android:textSize="24sp" />
+
+
+            <EditText
+                android:id="@+id/etregisterpasswordconfirm"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="300dp"
+                android:src="@drawable/card"
+                android:inputType="textPassword"
+                android:textColorHint="@color/username_ek1_color"
+                android:textSize="14.33sp"/>
+
+            <Button
+                android:id="@+id/btnregisterpage"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="370dp"
+                android:background="@drawable/rectangle_2_shape"
+                android:gravity="center"
+                android:text="@string/register"
+                style="@style/ButtonGrey"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvregistertologin"
+                android:layout_width="320dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center_horizontal|center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="430dp"
+                android:gravity="center"
+                android:text="@string/login_if_you_have_an_account"
+                android:textColor="@color/haven_t_sign_up_yet__color"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Sign Up"
+                android:textColor="@color/title_color"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

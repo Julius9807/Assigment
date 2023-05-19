@@ -4,7 +4,7 @@
         <item name="colorPrimary">@color/primary_color</item>
     </style>
 
-    <style name="Theme.JuliusAssigment" parent="Base.Theme.JuliusAssigment" />
+    <style name="Theme.JuliusAssignment" parent="Base.Theme.JuliusAssigment" />
 
     <style name="ButtonGrey">
 

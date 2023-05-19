@@ -1,76 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:padding="20dp"
-    >
+    tools:context=".Intro">
+
+    <RelativeLayout
+        android:id="@+id/page_intro_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.80000001192093"
+        android:background="@drawable/main_background_shape">
+
+        <ImageView
+            android:id="@+id/homegrown_education_logo_removebg_preview_1"
+            android:layout_width="247dp"
+            android:layout_height="206dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="homegrown_education_logo_removebg_preview_1"
+            android:src="@drawable/homegrown_education_logo_removebg_preview_1" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/page_intro_content"
+            android:layout_width="535dp"
+            android:layout_height="629dp"
+            android:layout_marginTop="200dp"
+            android:alpha="0.80000001192093"
+            android:background="@drawable/login">
+
+            <TextView
+                android:id="@+id/tvhello"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/hello_welcome"
+                android:textColor="@color/title_color"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvinfo"
+                android:layout_width="353dp"
+                android:layout_height="234dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="60dp"
+                android:text="@string/tvintro"
+                android:textColor="@color/title_color"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
 
-    <TextView
-        android:id="@+id/tvinfo"
-        android:layout_width="369dp"
-        android:layout_height="99dp"
-        android:text="@string/we_are_xxx_this_is_xxx_we_are_xxx_this_is_xxx_we_are_xxx_this_is_xxx_we_are_xxx_this_is_xxx_we_are_xxx_this_is_xxx"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/tvhello"
-        app:layout_constraintTop_toBottomOf="@+id/tvhello"
-        app:layout_constraintVertical_bias="0.0" />
+            <Button
+                android:id="@+id/btnlogin"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="340dp"
+                android:background="@drawable/rectangle_2_shape"
+                android:text="Sign In"
+                android:textColor="@color/bg_login_page_ek2_color"
+                android:textSize="24sp" />
 
-    <TextView
-        android:id="@+id/tvhello"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_welcome"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.087" />
+            <Button
+                android:id="@+id/btnregister"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="420dp"
+                android:background="@drawable/rectangle_2_shape"
+                android:text="@string/register"
+                android:textColor="@color/bg_login_page_ek2_color"
+                android:textSize="24sp" />
+        </androidx.cardview.widget.CardView>
 
-    <Button
-        android:id="@+id/btnlogin"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="90dp"
-        android:text="@string/login"
-        style="@style/ButtonBlue"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.464"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+    </RelativeLayout>
+</layout>
 
-    <Button
-        android:id="@+id/btnregister"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:text="@string/register"
-        style="@style/ButtonBlue"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btnlogin"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/btnlogin"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.996" />
-
-    <ImageView
-        android:id="@+id/imghome"
-        android:layout_width="215dp"
-        android:layout_height="197dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>

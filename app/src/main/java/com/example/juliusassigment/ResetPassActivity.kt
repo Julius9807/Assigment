@@ -12,7 +12,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.jakewharton.rxbinding2.widget.RxTextView
 
 @SuppressLint("CheckResult")
-class ResetPasswordActivity : AppCompatActivity() {
+class ResetPassActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityResetPasswordBinding
     private lateinit var auth: FirebaseAuth

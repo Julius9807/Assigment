@@ -4,30 +4,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2">
+    android:background="@drawable/main_background_shape"
+    tools:context=".ChangeNameActivity">
 
     <EditText
         android:id="@+id/etnewname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="Your new name"
         android:inputType="text"
-        android:text="Name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.327" />
+
+    <ImageView
+        android:id="@+id/backbtn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:alpha="0.75"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/back_icon"
+        android:layout_width="38dp"
+        android:layout_height="37dp"
+        app:srcCompat="@drawable/back_icon"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
 
     <Button
         android:id="@+id/btnchangename"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Change"
+        style="@style/ButtonGrey"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.625" />
+        app:layout_constraintVertical_bias="0.847" />
 
     <TextView
         android:id="@+id/tvchangename"
@@ -40,5 +61,6 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.364" />
+        app:layout_constraintVertical_bias="0.221"
+        android:textColor="@color/username_ek2_color"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

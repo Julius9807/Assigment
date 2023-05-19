@@ -16,7 +16,7 @@ import io.reactivex.Observable
 
 
 @SuppressLint("CheckResult")
-class RegisterAcitivity : AppCompatActivity() {
+class RegisterActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityRegisterAcitivityBinding
 
@@ -36,7 +36,7 @@ class RegisterAcitivity : AppCompatActivity() {
         val nameStream = RxTextView.textChanges(binding.etregistername)
             .skipInitialValue()
             .map { name ->
-                name.length < 6
+                name.length < 3
             }
             nameStream.subscribe{
             showTextMinimalAlert(it,"Name")
@@ -118,7 +118,7 @@ class RegisterAcitivity : AppCompatActivity() {
 
     private fun showTextMinimalAlert(isNotValid: Boolean, text: String){
         if (text == "Name")
-            binding.etregistername.error = if (isNotValid) "$text have to be 6 or more digit!" else null
+            binding.etregistername.error = if (isNotValid) "$text have to be 3 or more digit!" else null
         else if (text == "Password")
             binding.etregisterpassword.error = if (isNotValid) "$text have to be 8 or more digit!" else null
     }
@@ -145,6 +145,7 @@ class RegisterAcitivity : AppCompatActivity() {
                     Toast.makeText(this, "Register Successfully", Toast.LENGTH_SHORT).show()
                 } else{
                     Toast.makeText(this, it.exception?.message, Toast.LENGTH_SHORT).show()
+
                 }
             }
     }

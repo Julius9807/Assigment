@@ -4,7 +4,6 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.widget.TextView
 import android.widget.Toast
 import com.example.juliusassigment.databinding.ActivityHomeBinding
@@ -43,7 +42,7 @@ class HomeActivity : AppCompatActivity() {
             }
         }
         binding.btnchangename.setOnClickListener{
-            startActivity(Intent(this, MainActivity2::class.java))
+            startActivity(Intent(this, ChangeNameActivity::class.java))
         }
 
 

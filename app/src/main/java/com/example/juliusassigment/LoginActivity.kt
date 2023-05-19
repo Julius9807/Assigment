@@ -72,10 +72,10 @@ class LoginActivity : AppCompatActivity() {
         }
 
         binding.tvlogintoregister.setOnClickListener{
-            startActivity(Intent(this, RegisterAcitivity::class.java))
+            startActivity(Intent(this, RegisterActivity::class.java))
         }
         binding.tvforgotpass.setOnClickListener {
-            startActivity(Intent(this, ResetPasswordActivity::class.java))
+            startActivity(Intent(this, ResetPassActivity::class.java))
         }
     }
     private fun showTextMinimalAlert(isNotValid: Boolean, text: String){

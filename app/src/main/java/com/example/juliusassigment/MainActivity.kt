@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, LoginActivity::class.java))
         }
         binding.btnregister.setOnClickListener{
-            startActivity(Intent(this, RegisterAcitivity::class.java))
+            startActivity(Intent(this, RegisterActivity::class.java))
         }
     }
 
